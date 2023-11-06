@@ -1,4 +1,5 @@
-﻿using SkillAssessment.Models;
+﻿#nullable enable
+using SkillAssessment.Models;
 
 
 public class User
@@ -43,3 +44,4 @@ public class User
     public ICollection<Assessment>? assessments { get; set; }
     public ICollection<Result>? results { get; set; }
 }
+#nullable restore

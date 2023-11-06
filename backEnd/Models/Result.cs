@@ -1,4 +1,4 @@
-﻿
+﻿#nullable enable
 namespace SkillAssessment.Models
 {
     public class Result
@@ -10,20 +10,21 @@ namespace SkillAssessment.Models
         public int UnansweredQuestions { get; set; }
         public int WrongAnsweredQuestions { get; set; }
 
-        public string TimeLeft { get; set; }
+        public string? TimeLeft { get; set; }
 
         public int points { get; set; }
 
-        public string passorfail { get; set; }
+        public string? passorfail { get; set; }
 
-        public string date { get; set; }
+        public string? date { get; set; }
 
-        public string starttime { get; set; }
+        public string? starttime { get; set; }
 
-        public string endtime { get; set; }
+        public string? endtime { get; set; }
         public Assessment? assessment { get; set; }
         public User? users { get; set; }
         public Topics? Topics { get; set; }
     }
 
 }
+#nullable restore
